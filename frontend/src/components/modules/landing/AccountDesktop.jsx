@@ -1,0 +1,112 @@
+import React from 'react'
+
+import { 
+    BadgeCheck, 
+    Bell, 
+    PanelLeft 
+} from 'lucide-react'
+
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
+import { 
+    Avatar, 
+    AvatarFallback, 
+    AvatarImage 
+} from "@/components/ui/avatar"
+
+import LogoutBtn from './LogoutBtn'
+import { getProfilePicture } from '@/lib/utils'
+import { getInitial } from '@/utils/getInitial'
+import { useAuth } from '@/context/AuthContext'
+
+const AccountDesktop = () => {
+    const { userData } = useAuth();
+
+    return (
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            {userData ? (
+                <DropdownMenu>
+                    <DropdownMenuTrigger className="outline-none">
+                        <Avatar className="size-9 shadow-sm cursor-pointer">
+                            <AvatarImage 
+                                src={getProfilePicture(userData)}
+                                referrerPolicy="no-referrer"
+                                className="object-cover"
+                            />
+                            <AvatarFallback className="bg-gray-200">
+                                {getInitial(userData.username)}
+                            </AvatarFallback>
+                        </Avatar>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="mr-10 min-w-56 rounded-lg">
+                        <DropdownMenuLabel className="p-0 font-normal">
+                            <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
+                                <Avatar className="size-9 ring-2 ring-white shadow-sm">
+                                    <AvatarImage 
+                                        src={userData ? getProfilePicture(userData) : ""}
+                                        referrerPolicy="no-referrer"
+                                        className="object-cover"
+                                    />
+                                    <AvatarFallback className="bg-gray-200">
+                                        {getInitial(userData.username)}
+                                    </AvatarFallback>
+                                </Avatar>
+                                <div className="grid flex-1 text-left text-sm leading-tight">
+                                    <span className="truncate font-semibold">{userData?.username}</span>
+                                    <span className="truncate text-xs">{userData?.email}</span>
+                                </div>
+                            </div>
+                        </DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        {userData.role !== "user" && (
+                            <>
+                                <DropdownMenuGroup>
+                                    <DropdownMenuItem className="cursor-pointer">
+                                        <a href="/dashboard" className="flex items-center gap-2">
+                                            <PanelLeft className="mr-2 h-4 w-4" />
+                                            Dashboard
+                                        </a>
+                                    </DropdownMenuItem>
+                                </DropdownMenuGroup>
+                                <DropdownMenuSeparator />
+                            </>
+                        )}
+                        <DropdownMenuGroup>
+                            <DropdownMenuItem className="cursor-pointer">
+                                <a href={userData.role !== "user" ? `/dashboard/setting` : `/profile/${userData._id}`} className="flex items-center gap-2">
+                                    <BadgeCheck className="mr-2 h-4 w-4" />
+                                    Profile
+                                </a>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem className="cursor-pointer">
+                                <a href={userData.role !== "user" ? `/dashboard/notification` : `/profile/${userData._id}`} className="flex items-center gap-2">
+                                    <Bell className="mr-2 h-4 w-4" />
+                                    Pemberitahuan
+                                </a>
+                            </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        <DropdownMenuSeparator />
+                        <LogoutBtn isMobile={false}/>
+                    </DropdownMenuContent>
+                </DropdownMenu>
+            ) : (
+                <a
+                    href="/sign-in"
+                    className="inline-flex items-center justify-center rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-blue-400 transition-colors"
+                >
+                    Log in <span aria-hidden="true" className="ml-1">&rarr;</span>
+                </a>
+            )}
+        </div>
+    )
+}
+
+export default AccountDesktop
