@@ -9,6 +9,7 @@ import ImpactSection from './ImpactSection';
 import ArticleSection from './ArticleSection';
 import CampaignSection from './CampaignSection';
 import DefaultLayout from '@/components/layouts/DefaultLayout';
+import FeatureSection from './FeatureSection';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Navbar />
             <HeroSection />
             <AboutSection />
+            <FeatureSection />
             <CampaignSection />
             <ImpactSection />
             <ArticleSection />
