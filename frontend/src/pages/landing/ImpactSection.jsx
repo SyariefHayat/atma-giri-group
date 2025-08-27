@@ -1,44 +1,28 @@
 import React from 'react'
 
-import SectionLayout from '@/components/layouts/SectionLayout'
-import RadialPath from '@/components/modules/element/RadialPath'
-
 const ImpactSection = () => {
     return (
-        <SectionLayout label="Impact Section" divStyle="px-0">
-            <div className="relative isolate overflow-hidden bg-gray-900 px-6 pb-16 sm:pb-0 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-                <RadialPath />
+        <section className="relative">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="relative w-full h-[70vh] sm:h-[80vh] lg:h-screen bg-[url('/img.jpg')] bg-cover bg-center rounded-xl overflow-hidden shadow-lg">
+                    <div className="absolute inset-0 bg-black/50" />
 
-                <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-                    <h2 className="text-base/7 font-semibold text-indigo-600">Dampak Kami</h2>
-                    <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Perubahan Nyata bagi Sesama</p>
-                    <p className="mt-6 text-lg/8 text-gray-300">
-                        Berkat dukungan Anda, kami telah menyalurkan bantuan kepada ribuan penerima manfaat.
-                    </p>
-
-                    <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                        <a
-                            href="/program/sosial"
-                            className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                        >
-                            Donasi Sekarang
-                        </a>
-                        <a href="/program/sosial" className="text-sm/6 font-semibold text-white">
-                            Lihat Lainnya <span aria-hidden="true">&rarr;</span>
-                        </a>
+                    <div className="relative z-10 w-full h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-12">
+                        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4 text-white drop-shadow-lg">
+                        Dampak Kami
+                        </h2>
+                        <p className="text-base sm:text-lg lg:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
+                        Sejak berdiri, Yayasan Atma Giri Group telah menghadirkan berbagai
+                        program yang memberikan perubahan nyata bagi masyarakat. Dari
+                        mendukung petani lokal meningkatkan hasil panen, hingga membantu
+                        anak-anak kurang mampu memperoleh pendidikan, setiap langkah kecil
+                        yang kami lakukan membawa dampak besar bagi masa depan.
+                        </p>
                     </div>
                 </div>
-
-                <div className="hidden sm:block relative mt-16 h-80 lg:mt-8">
-                    <img
-                        alt="App screenshot"
-                        src="/impact.png"
-                        className="absolute top-0 left-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                    />
-                </div>
             </div>
-        </SectionLayout>
-    );
-};
+        </section>
+    )
+}
 
-export default ImpactSection;
+export default ImpactSection
