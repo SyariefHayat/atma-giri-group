@@ -102,7 +102,7 @@ const AccountDesktop = () => {
                     href="/sign-in"
                     className="inline-flex items-center justify-center rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-blue-400 transition-colors"
                 >
-                    Log in <span aria-hidden="true" className="ml-1">&rarr;</span>
+                    Log in
                 </a>
             )}
         </div>

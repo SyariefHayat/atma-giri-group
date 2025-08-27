@@ -9,22 +9,20 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 import EachUtils from '@/utils/EachUtils';
-import { Toaster } from '@/components/ui/sonner';
 import { LIST_NAVBAR } from '@/constants/listNavbar';
 import AccountMobile from '@/components/modules/landing/AccountMobile';
 import AccountDesktop from '@/components/modules/landing/AccountDesktop';
 
 const Navbar = () => {
     return (
-        <header className="w-full">
-            <Toaster />
+        <header className="w-full absolute z-10 text-white">
             <nav aria-label="Global" className="flex items-center justify-between pt-4 pb-2 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Yayasan Atma giri group</span>
                         <img
                             alt="logo yayasan atma giri group"
-                            src="/logo.png"
+                            src="/logo-4.png"
                             className="h-16 w-auto"
                         />
                     </a>
@@ -32,7 +30,7 @@ const Navbar = () => {
 
                 <AccountMobile />
 
-                <div className="hidden lg:flex lg:gap-x-12">
+                <div className="hidden lg:flex lg:gap-x-12 items-center">
                     <EachUtils
                         of={LIST_NAVBAR}
                         render={(item, index) => 
