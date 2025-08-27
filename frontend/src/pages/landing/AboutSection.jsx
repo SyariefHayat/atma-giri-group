@@ -1,34 +1,59 @@
 import React from 'react'
-import SectionLayout from '@/components/layouts/SectionLayout'
-import { Button } from '@/components/ui/button'
 
 const AboutSection = () => {
     return (
-        <SectionLayout label="About Section">
-            <div className="space-y-8 lg:space-y-12">
-                <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-8 xl:gap-12">
-                    <div className="w-full my-auto">
-                        <h2 className="text-sm font-semibold text-indigo-600 uppercase tracking-wide">
-                            Tentang Kami
-                        </h2>
-                        <h1 className="mt-2 text-2xl font-semibold tracking-tight sm:leading-14 text-pretty text-gray-900 sm:text-3xl lg:text-4xl xl:text-5xl">
-                            Atma Giri Group
-                        </h1>
-                        <div className="mt-3">
-                            <p className="text-lg/8 text-gray-600">
-                                Atma Giri Group adalah yayasan yang berkomitmen memperjuangkan kedaulatan pangan dan pendidikan berkualitas bagi seluruh lapisan masyarakat. Kami percaya bahwa setiap orang berhak mendapatkan pangan sehat serta akses pendidikan yang inklusif dan merata.
-                            </p>
-                            <p className="text-lg/8 text-gray-600">
-                                Dengan semangat kolaborasi dan keberlanjutan, Atma Giri Group hadir untuk menciptakan perubahan positif yang nyata, demi mewujudkan Indonesia yang lebih kuat, cerdas, dan berdaya saing global.
-                            </p>
-                        </div>
-                        <Button className="mt-5">Lihat lebih banyak</Button>
+        <section className="relative py-8 sm:py-16 rounded-t-[40px] -mt-10 bg-white">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-gray-900">
+                        Tentang Kami
+                    </h2>
+                    <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        Atma Giri Group adalah yayasan yang berkomitmen memperjuangkan kedaulatan pangan dan pendidikan berkualitas bagi seluruh lapisan masyarakat. Kami percaya bahwa setiap orang berhak mendapatkan pangan sehat serta akses pendidikan yang inklusif dan merata.
+                    </p>
+                </div>
+                
+                <div className="mt-16">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
+                        <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900">
+                            Nilai-Nilai Kami
+                        </h3>
+                        <button className="bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200 text-white px-6 py-3 rounded-lg font-medium shadow-md hover:shadow-lg">
+                            Lihat lebih banyak
+                        </button>
                     </div>
-                    <div className="w-full h-screen bg-[url('/sub-hero.png')] bg-cover bg-center rounded-lg">
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="group">
+                            <div className="w-full h-[280px] sm:h-[320px] lg:h-[350px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group-hover:scale-[1.02] flex items-center justify-center">
+                                <div className="text-center text-gray-500">
+                                    <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto mb-4"></div>
+                                    <p className="text-sm font-medium">Konten akan ditambahkan</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="group">
+                            <div className="w-full h-[280px] sm:h-[320px] lg:h-[350px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group-hover:scale-[1.02] flex items-center justify-center">
+                                <div className="text-center text-gray-500">
+                                    <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto mb-4"></div>
+                                    <p className="text-sm font-medium">Konten akan ditambahkan</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="group md:col-span-2 lg:col-span-1">
+                            <div className="w-full h-[280px] sm:h-[320px] lg:h-[350px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group-hover:scale-[1.02] flex items-center justify-center">
+                                <div className="text-center text-gray-500">
+                                    <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto mb-4"></div>
+                                    <p className="text-sm font-medium">Konten akan ditambahkan</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </SectionLayout>
+        </section>
     )
 }
 

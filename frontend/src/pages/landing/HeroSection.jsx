@@ -4,7 +4,7 @@ const HeroSection = () => {
     return (
         <section aria-label="Hero section" className="relative w-full h-screen flex items-center bg-[url('/hero.png')] bg-cover bg-center gap-14 text-white">
             <div className="inset-0 bg-black opacity-30 absolute"></div>
-            <div className="relative mx-auto max-w-4xl sm:px-0 text-center mt-12">
+            <div className="relative mx-auto max-w-4xl sm:px-0 text-center">
                 <h1 className="text-5xl font-semibold tracking-tight sm:text-7xl leading-tight">
                     Kedaulatan Pangan, Pendidikan Berkualitas
                 </h1>
