@@ -2,11 +2,13 @@ import React from 'react'
 
 import EachUtils from '@/utils/EachUtils'
 import { getInitial } from '@/utils/getInitial'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { LIST_CAMPAIGN } from '@/constants/listCampaign';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { LIST_ARTICLE } from '@/constants/listArticle';
+import { LIST_ARTICLE } from '@/constants/listArticle'
+
+import { 
+    Avatar, 
+    AvatarFallback, 
+    AvatarImage 
+} from '@/components/ui/avatar'
 
 const ArticleSection = () => {
     return (

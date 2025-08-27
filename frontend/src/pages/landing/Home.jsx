@@ -10,6 +10,7 @@ import ArticleSection from './ArticleSection';
 import CampaignSection from './CampaignSection';
 import DefaultLayout from '@/components/layouts/DefaultLayout';
 import FeatureSection from './FeatureSection';
+import CtaSection from './CtaSection';
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <ImpactSection />
             <ArticleSection />
             <FaqSection />
+            {/* <CtaSection /> */}
             <Footer />
         </DefaultLayout>
     );
