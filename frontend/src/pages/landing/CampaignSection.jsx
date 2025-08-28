@@ -5,12 +5,11 @@ import { Badge } from '@/components/ui/badge'
 import { getInitial } from '@/utils/getInitial'
 import { Progress } from '@/components/ui/progress'
 import { LIST_CAMPAIGN } from '@/constants/listCampaign'
-import SectionLayout from '@/components/layouts/SectionLayout'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 const CampaignSection = () => {
     return (
-        <section className="relative py-8 sm:py-16">
+        <section className="relative py-8">
             <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
                 <div>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-gray-900">Program Kami</h2>

@@ -12,7 +12,7 @@ import {
 
 const ArticleSection = () => {
     return (
-        <section className="relative py-8 sm:py-16">
+        <section className="relative py-8">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="text-center">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-gray-900">Berita dan Cerita Kami</h2>

@@ -18,12 +18,10 @@ const Home = () => {
             <Navbar />
             <HeroSection />
             <AboutSection />
-            <FeatureSection />
             <CampaignSection />
             <ImpactSection />
             <ArticleSection />
             <FaqSection />
-            {/* <CtaSection /> */}
             <Footer />
         </DefaultLayout>
     );

@@ -2,7 +2,7 @@ import React from 'react'
 
 const ImpactSection = () => {
     return (
-        <section className="relative">
+        <section className="relative py-8 sm:py-16">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="relative w-full h-[70vh] sm:h-[80vh] lg:h-screen bg-[url('/img.jpg')] bg-cover bg-center rounded-xl overflow-hidden shadow-lg">
                     <div className="absolute inset-0 bg-black/50" />

@@ -9,7 +9,6 @@ import {
 
 import EachUtils from '@/utils/EachUtils'
 import { LIST_FAQ } from '@/constants/listFaq'
-import SectionLayout from '@/components/layouts/SectionLayout'
 
 const FaqSection = () => {
     return (
