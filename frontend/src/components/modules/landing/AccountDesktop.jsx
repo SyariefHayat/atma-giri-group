@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import { 
     BadgeCheck, 
@@ -26,9 +27,11 @@ import LogoutBtn from './LogoutBtn'
 import { getProfilePicture } from '@/lib/utils'
 import { getInitial } from '@/utils/getInitial'
 import { useAuth } from '@/context/AuthContext'
+import { Button } from '@/components/ui/button'
 
 const AccountDesktop = () => {
     const { userData } = useAuth();
+    const navigate = useNavigate();
 
     return (
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -98,12 +101,9 @@ const AccountDesktop = () => {
                     </DropdownMenuContent>
                 </DropdownMenu>
             ) : (
-                <a
-                    href="/sign-in"
-                    className="inline-flex items-center justify-center rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-blue-400 transition-colors"
-                >
+                <Button onClick={() => navigate("/sign-in")} className="cursor-pointer bg-blue-500 hover:bg-blue-400">
                     Log in
-                </a>
+                </Button>
             )}
         </div>
     )
