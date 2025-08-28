@@ -10,8 +10,8 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 const CampaignSection = () => {
     return (
         <section className="relative py-8">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-                <div>
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+                <div className="text-center">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-gray-900">Program Kami</h2>
                     <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">Mari bergabung dalam berbagai kampanye donasi yang kami jalankan. Setiap kontribusi Anda akan menjadi langkah nyata untuk mendukung kedaulatan pangan dan pendidikan inklusif bagi mereka yang membutuhkan.</p>
                 </div>
