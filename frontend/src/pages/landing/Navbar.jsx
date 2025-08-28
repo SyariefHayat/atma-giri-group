@@ -16,7 +16,7 @@ import AccountDesktop from '@/components/modules/landing/AccountDesktop';
 const Navbar = () => {
     return (
         <header className="w-full absolute z-10 text-white">
-            <nav aria-label="Global" className="flex items-center justify-between pt-4 pb-2 lg:px-8">
+            <nav aria-label="Global" className="flex items-center justify-between pt-4 pb-2 px-4 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Yayasan Atma giri group</span>
