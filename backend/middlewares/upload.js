@@ -6,21 +6,21 @@ const cloudinary = require('../config/cloudinary');
 const getFolderName = (fieldname) => {
     switch (fieldname) {
         case 'profilePicture':
-            return 'annur-rahman-rahim/profile/picture';
+            return 'atma-giri-group/profile/picture';
         case 'profileAlbum':
-            return 'annur-rahman-rahim/profile/album';
+            return 'atma-giri-group/profile/album';
         case 'cover':
-            return 'annur-rahman-rahim/article';
+            return 'atma-giri-group/article';
         case 'image':
-            return 'annur-rahman-rahim/image';
+            return 'atma-giri-group/image';
         case 'campaignImage':
-            return 'annur-rahman-rahim/campaign';
+            return 'atma-giri-group/campaign';
         case 'programImage':
-            return 'annur-rahman-rahim/program';
+            return 'atma-giri-group/program';
         case 'programDocument':
-            return 'annur-rahman-rahim/program/documents';
+            return 'atma-giri-group/program/documents';
         default:
-            return 'annur-rahman-rahim/others';
+            return 'atma-giri-group/others';
     }
 };
 
