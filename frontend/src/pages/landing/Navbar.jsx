@@ -13,9 +13,9 @@ import { LIST_NAVBAR } from '@/constants/listNavbar';
 import AccountMobile from '@/components/modules/landing/AccountMobile';
 import AccountDesktop from '@/components/modules/landing/AccountDesktop';
 
-const Navbar = () => {
+const Navbar = ({ position, textColor = "text-white" }) => {
     return (
-        <header className="w-full absolute z-10 text-white">
+        <header className={`w-full ${position ? `${position}` : "absolute z-10"}`}>
             <nav aria-label="Global" className="flex items-center justify-between pt-4 pb-2 px-4 lg:px-8">
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
@@ -28,7 +28,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                <AccountMobile />
+                <AccountMobile iconColor={textColor} />
 
                 <div className="hidden lg:flex lg:gap-x-12 items-center">
                     <EachUtils
@@ -37,12 +37,12 @@ const Navbar = () => {
                             item.subMenu ? (
                                 <DropdownMenu key={index}>
                                     <DropdownMenuTrigger className="group flex items-center justify-center gap-2 cursor-pointer outline-none">
-                                        <span className={"text-sm font-semibold group-hover:text-blue-500 transition-colors duration-200"}>
+                                        <span className={`text-sm font-semibold ${textColor} group-hover:text-blue-500 transition-colors duration-200`}>
                                             {item.title}
                                         </span>
                                         <ChevronDown 
                                             size={16} 
-                                            className={"group-hover:text-blue-500 group-data-[state=open]:rotate-180 transition-all duration-200"}
+                                            className={`${textColor} group-hover:text-blue-500 group-data-[state=open]:rotate-180 transition-all duration-200`}
                                         />
                                     </DropdownMenuTrigger>
                                     <DropdownMenuContent 
@@ -74,7 +74,7 @@ const Navbar = () => {
                                 <a 
                                     key={index} 
                                     href={item.url} 
-                                    className={"text-sm/6 font-semibold hover:text-blue-500"}
+                                    className={`text-sm/6 font-semibold ${textColor} hover:text-blue-500`}
                                 >
                                     {item.title}
                                 </a>
