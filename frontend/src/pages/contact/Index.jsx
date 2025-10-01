@@ -1,17 +1,20 @@
 import React from 'react'
 
+import { 
+    MessageCircle, 
+    Phone, 
+    Mail, 
+    MapPin, 
+    Clock 
+} from 'lucide-react'
+
 import Navbar from '../landing/Navbar'
 import Footer from '../landing/Footer'
 import DefaultLayout from '@/components/layouts/DefaultLayout'
-import ContactForm from '@/components/modules/contact/ContactForm'
-
-import { MessageCircle, Phone, Mail, Send, MapPin, Clock } from 'lucide-react'
 
 const CONTACT = {
     WHATSAPP_NUMBER: '6281234567890',
-    PHONE_NUMBER: '+62 812-3456-7890',
-    EMAIL: 'halo@epadi.id',
-    TELEGRAM_USERNAME: 'epadi_support',
+    PHONE_NUMBER: '+62 822-5887-4949',
     ADDRESS: 'Alang Alang, Karangbinangun, Kec. Karangbinangun, Kabupaten Lamongan, Jawa Timur 62293',
     HOURS: 'Senin–Jumat, 09.00–17.00 WIB',
 }
@@ -23,7 +26,6 @@ const Contact = () => {
         <DefaultLayout>
             <Navbar />
 
-            {/* HERO */}
             <div className="relative w-full h-[500px] flex items-center justify-center bg-[url(/8.webp)] bg-cover bg-center text-white">
                 <div className="absolute inset-0 bg-black/50 z-0"></div>
                 <div className="relative mx-auto max-w-3xl mt-20 px-3 sm:px-0 text-center">
