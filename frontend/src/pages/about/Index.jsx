@@ -12,7 +12,7 @@ const About = () => {
     return (
         <DefaultLayout>
             <Navbar />
-            <section className="relative w-full h-[500px] flex items-center justify-center bg-[url(/5.webp)] bg-cover bg-center text-white">
+            <section className="relative w-full h-[500px] flex items-center justify-center bg-[url(/toge.jpg)] bg-cover bg-center text-white">
                 <div className="absolute inset-0 bg-black/50 z-0"></div>
                 <div className="relative mx-auto max-w-3xl mt-20 px-3 sm:px-0 text-center">
                     <h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">Atma Giri Group</h1>
@@ -20,29 +20,26 @@ const About = () => {
                 </div>
             </section>
 
-            <FlexLayout image="https://i.pinimg.com/1200x/5d/d1/83/5dd1835342f00f08a1e0997d3f8ccca8.jpg">
+            <FlexLayout image="founder.jpg">
                 <h2 className="text-base/7 font-semibold text-blue-600">Langkah Awal</h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Tentang Kami</p>
                 <p className="mt-6 text-lg/8 text-gray-600">
-                    Terinspirasi dari berbagai isu sosial dan tantangan zaman, organisasi ini lahir sebagai bentuk kepedulian terhadap sesama. Kami berusaha menjembatani kesenjangan melalui program-program pendidikan, pelatihan keterampilan, dan bantuan sosial.
-                </p>
-                <p className="mt-6 text-lg/8 text-gray-600">
-                    Dengan semangat kolaboratif dan pemanfaatan teknologi, kami terus mengembangkan ekosistem yang mendukung pertumbuhan sosial yang adil dan merata.
+                    Dengan menggabungkan pendekatan berbasis hak atas pangan dan pendidikan, yayasan ini bertujuan untuk menciptakan perubahan yang berkelanjutan dan berdampak bagi masyarakat luas. Kami percaya bahwa dengan memperkuat kedaulatan pangan dan memastikan akses pendidikan yang inklusif, kita dapat mencapai kesejahteraan yang merata dan mengurangi kesenjangan sosial di masyarakat.
                 </p>
             </FlexLayout>
 
-            <FlexLayout isClip={true} isReverse={true} image="arah-tujuan.webp">
+            <FlexLayout isClip={true} isReverse={true} image="manager1.jpg">
                 <h2 className="text-base/7 font-semibold text-blue-600">Arah dan Tujuan</h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Visi Kami</p>
                 <p className="mt-6 text-lg/8 text-gray-600">
-                    Menjadi pusat kolaborasi sosial terdepan yang mendorong perubahan melalui inovasi, edukasi, dan penguatan komunitas.
+                    Melalui kolaborasi dengan berbagai pihak, termasuk pemerintah, organisasi non pemerintah, akademisi, dan komunitas lokal, kami berkomitmen untuk mewujudkan visi kami: sebuah dunia di mana setiap orang memiliki hak dan kemampuan untuk hidup secara bermartabat dengan akses terhadap pangan yang sehat dan pendidikan yang berkualitas.
                 </p>
                 <p className="mt-6 text-lg/8 text-gray-600">
-                    Visi ini menjadi pedoman kami dalam merancang setiap program dan inisiatif yang berdampak luas, terukur, dan berkelanjutan.
+                    Menjadi yayasan terdepan dalam memperjuangkan kedaulatan pangan dan meningkatkan kualitas pendidikan di indonesia. demi terciptanya masyarakat yang mandiri, sejahtera, dan berdaya saing global.
                 </p>
             </FlexLayout>
 
-            <FlexLayout image="https://i.pinimg.com/736x/8d/6b/4f/8d6b4f321ef3eb04dfe9c1caad3bc6e1.jpg">
+            <FlexLayout image="impact.png">
                 <h2 className="text-base/7 font-semibold text-indigo-600">Nilai dan Tindakan</h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Misi Kami</p>
                 <ol className="list-decimal pl-4 text-gray-600 text-lg/8">

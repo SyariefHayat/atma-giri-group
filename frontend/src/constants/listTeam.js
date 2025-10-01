@@ -13,7 +13,7 @@ export const LIST_TEAM = [
     },
     {
         id: 3,
-        name: "Iqbal Pangestu",
+        name: "Moh. Iqbal Juniar Saputra",
         job: "Admin",
         image: "admin.jpg",
     },
